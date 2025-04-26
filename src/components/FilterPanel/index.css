@@ -1,0 +1,163 @@
+.filter-panel {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.filter-title {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+  color: #333;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #008080;
+}
+
+.experience-range {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.experience-range input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.skills-select {
+  height: 150px !important;
+  margin-bottom: 10px;
+}
+
+/* Style for multiple select options */
+.skills-select option {
+  padding: 8px;
+}
+
+.skills-select option:checked {
+  background-color: #008080;
+  color: white;
+}
+
+.selected-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+  min-height: 32px;
+}
+
+.selected-skill-tag {
+  background-color: #e9ecef;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.remove-skill {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.remove-skill:hover {
+  color: #dc3545;
+}
+
+.custom-skill-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.custom-skill-field {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.custom-skill-field:focus {
+  outline: none;
+  border-color: #008080;
+}
+
+.add-skill-btn {
+  padding: 8px 16px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-skill-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.add-skill-btn:not(:disabled):hover {
+  background-color: #006666;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .filter-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .filter-group {
+    margin-bottom: 0;
+  }
+
+  .filter-title {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+  }
+}
