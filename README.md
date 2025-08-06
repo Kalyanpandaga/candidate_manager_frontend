@@ -2,6 +2,19 @@
 
 Frontend application for managing candidates with authentication and protected dashboard.
 
+## Live Demo
+
+**[Live Demo ](https://hr-candidate-manager-dashboard.onrender.com/)**
+
+---
+
+## Backend Repository
+
+Backend API (Node.js + Express + MongoDB):  
+**[Candidate Management System - Backend](https://github.com/Kalyanpandaga/candidate_manager_backend)**
+
+---
+
 ## Tech Stack
 
 - React.js (Vite)
